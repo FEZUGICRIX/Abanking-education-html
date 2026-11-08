@@ -1,16 +1,289 @@
 <!DOCTYPE html>
 <html lang="en">
-
+ 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>antools. - Awesome tools for Designer & Developer</title>
 
-<body>
-    
+  <!-- шрифты  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+ 
+<body class="page">
+ 
+  <!-- Хедер -->
+  <header class="header">
+    <div class="header__container">
+      <a href="#" class="header__logo">
+        <img src="./assets/icons/logo.svg" alt="antools logo" class="header__logo-icon" width="38" height="38">
+        <span class="header__logo-text">antools.</span>
+      </a>
+
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link header__nav-link_active">Home</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">
+              Categories
+              <img src="./assets/icons/chevron-down.svg" alt="" class="header__nav-icon" width="18" height="18">
+            </a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">My Collections</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">Blog</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__auth">
+        <a href="#" class="header__auth-login">Login</a>
+        <a href="#" class="header__auth-signup">Sign Up</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero__container">
+        <div class="hero__content">
+          <h1 class="hero__title">
+            Awesome tools for Designer & Developer<span class="hero__title-accent">.</span>
+          </h1>
+          <p class="hero__description">
+            Antool is a web collection of information on paid or free Design and Development tools
+          </p>
+
+          <form class="hero__form" action="#">
+            <img src="./assets/icons/search.svg" alt="" class="hero__form-icon" width="24" height="24">
+            <input type="text" class="hero__form-input" placeholder="find more than 430+ tools...">
+            <button type="submit" class="hero__form-submit">Search</button>
+          </form>
+
+          <div class="hero__socials">
+            <a href="#" class="hero__social-link" aria-label="Facebook">
+              <img src="./assets/icons/facebook.svg" alt="Facebook" class="hero__social-icon" width="34" height="34">
+            </a>
+            <a href="#" class="hero__social-link" aria-label="Instagram">
+              <img src="./assets/icons/instagram.svg" alt="Instagram" class="hero__social-icon" width="36" height="36">
+            </a>
+            <a href="#" class="hero__social-link" aria-label="Twitter">
+              <img src="./assets/icons/twitter.svg" alt="Twitter" class="hero__social-icon" width="36" height="36">
+            </a>
+          </div>
+        </div>
+
+        <div class="hero__visual">
+          <img src="./assets/images/hero-illustration.svg" alt="Illustration" class="hero__image">
+        </div>
+      </div>
+    </section>
+
+    <!-- Секция популярных инструментов -->
+    <section class="tools">
+      <div class="tools__container">
+        <header class="tools__header">
+          <h2 class="tools__title">Most Popular Tools</h2>
+          <p class="tools__description">
+            Tools for the best Designers and Developers<br>most popularly used in the world
+          </p>
+        </header>
+
+        <div class="tools__grid">
+          <!-- Figma -->
+          <article class="tools__card">
+            <div class="tools__card-top">
+              <img src="./assets/icons/figma.svg" alt="Figma" class="tools__card-icon" width="64" height="64">
+              <div class="tools__card-info">
+                <h3 class="tools__card-title">FIGMA</h3>
+                <span class="tools__card-badge">Free</span>
+              </div>
+            </div>
+            <p class="tools__card-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <div class="tools__card-actions">
+              <div class="tools__card-buttons">
+                <button type="button" class="tools__action-btn" aria-label="Like">
+                  <img src="./assets/icons/like-default.svg" alt="" class="tools__action-icon" width="28" height="28">
+                </button>
+                <button type="button" class="tools__action-btn" aria-label="Folder">
+                  <img src="./assets/icons/folder.svg" alt="" class="tools__action-icon" width="30" height="30">
+                </button>
+              </div>
+              <a href="#" class="tools__visit-btn">Visit</a>
+            </div>
+          </article>
+
+          <!-- Sketch (активный) -->
+          <article class="tools__card tools__card_active">
+            <div class="tools__card-glow"></div>
+            <div class="tools__card-top">
+              <img src="./assets/icons/sketch.svg" alt="Sketch" class="tools__card-icon" width="64" height="57">
+              <div class="tools__card-info">
+                <h3 class="tools__card-title">Sketch</h3>
+                <span class="tools__card-badge tools__card-badge_active">Trial &amp; Paid</span>
+              </div>
+            </div>
+            <p class="tools__card-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <div class="tools__card-actions">
+              <div class="tools__card-buttons">
+                <button type="button" class="tools__action-btn tools__action-btn_active" aria-label="Liked">
+                  <img src="./assets/icons/like-active.svg" alt="" class="tools__action-icon" width="28" height="28">
+                </button>
+                <button type="button" class="tools__action-btn" aria-label="Folder">
+                  <img src="./assets/icons/folder.svg" alt="" class="tools__action-icon" width="30" height="30">
+                </button>
+              </div>
+              <a href="#" class="tools__visit-btn tools__visit-btn_active">Visit</a>
+            </div>
+          </article>
+
+          <!-- VS code  -->
+          <article class="tools__card" > 
+            <div class="tools__card-top">
+              <img src="./assets/icons/vscode.svg" alt="VS Code" class="tools__card-icon" width="65" height="63">
+              <div class="tools__card-info">
+                <h3 class="tools__card-title">Visual Studio Code</h3>
+                <span class="tools__card-badge">Free</span>
+              </div>
+            </div>
+            <p class="tools__card-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <div class="tools__card-actions">
+              <div class="tools__card-buttons">
+                <button type="button" class="tools__action-btn" aria-label="Like">
+                  <img src="./assets/icons/like-default.svg" alt="" class="tools__action-icon" width="28" height="28">
+                </button>
+                <button type="button" class="tools__action-btn" aria-label="Folder">
+                  <img src="./assets/icons/folder.svg" alt="" class="tools__action-icon" width="30" height="30">
+                </button>
+              </div>
+              <a href="#" class="tools__visit-btn">Visit</a>
+            </div>
+          </article>
+
+          <!-- Notion -->
+          <article class="tools__card">
+            <div class="tools__card-top">
+              <img src="./assets/icons/notion.svg" alt="Notion" class="tools__card-icon" width="64" height="64">
+              <div class="tools__card-info">
+                <h3 class="tools__card-title">Notion</h3>
+                <span class="tools__card-badge">Free &amp; Paid</span>
+              </div>
+            </div>
+            <p class="tools__card-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <div class="tools__card-actions">
+              <div class="tools__card-buttons">
+                <button type="button" class="tools__action-btn" aria-label="Like">
+                  <img src="./assets/icons/like-default.svg" alt="" class="tools__action-icon" width="28" height="28">
+                </button>
+                <button type="button" class="tools__action-btn" aria-label="Folder">
+                  <img src="./assets/icons/folder.svg" alt="" class="tools__action-icon" width="30" height="30">
+                </button>
+              </div>
+              <a href="#" class="tools__visit-btn">Visit</a>
+            </div>
+          </article>
+
+          <!-- Slack -->
+          <article class="tools__card">
+            <div class="tools__card-top">
+              <img src="./assets/icons/slack.svg" alt="Slack" class="tools__card-icon" width="65" height="64">
+              <div class="tools__card-info">
+                <h3 class="tools__card-title">Slack</h3>
+                <span class="tools__card-badge">Free &amp; Paid</span>
+              </div>
+            </div>
+            <p class="tools__card-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <div class="tools__card-actions">
+              <div class="tools__card-buttons">
+                <button type="button" class="tools__action-btn" aria-label="Like">
+                  <img src="./assets/icons/like-default.svg" alt="" class="tools__action-icon" width="28" height="28">
+                </button>
+                <button type="button" class="tools__action-btn" aria-label="Folder">
+                  <img src="./assets/icons/folder.svg" alt="" class="tools__action-icon" width="30" height="30">
+                </button>
+              </div>
+              <a href="#" class="tools__visit-btn">Visit</a>
+            </div>
+          </article>
+
+          <!-- Invision -->
+          <article class="tools__card">
+            <div class="tools__card-top">
+              <img src="./assets/icons/invision.svg" alt="Invision" class="tools__card-icon" width="65" height="64">
+              <div class="tools__card-info">
+                <h3 class="tools__card-title">Invision</h3>
+                <span class="tools__card-badge">Free &amp; Paid</span>
+              </div>
+            </div>
+            <p class="tools__card-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <div class="tools__card-actions">
+              <div class="tools__card-buttons">
+                <button type="button" class="tools__action-btn" aria-label="Like">
+                  <img src="./assets/icons/like-default.svg" alt="" class="tools__action-icon" width="28" height="28">
+                </button>
+                <button type="button" class="tools__action-btn" aria-label="Folder">
+                  <img src="./assets/icons/folder.svg" alt="" class="tools__action-icon" width="30" height="30">
+                </button>
+              </div>
+              <a href="#" class="tools__visit-btn">Visit</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="tools__footer">
+          <button type="button" class="tools__more-btn">Load more</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- бренды -->
+    <section class="brands">
+      <div class="brands__container">
+        <div class="brands__card">
+          <div class="brands__glow"></div>
+          <h2 class="brands__title">Trusted more than 150+ brand</h2>
+          <ul class="brands__list">
+            <li class="brands__item">
+              <img src="./assets/icons/microsoft.svg" alt="Microsoft" class="brands__logo" width="193" height="42">
+            </li>
+            <li class="brands__item">   
+              <img src="./assets/icons/google.svg" alt="Google" class="brands__logo" width="157" height="51">
+            </li> 
+            <li class="brands__item"> 
+              <img src="./assets/icons/slack-brand.svg" alt="Slack" class="brands__logo" width="194" height="49">
+            </li>
+            <li class="brands__item">
+              <img src="./assets/icons/wordpress.svg" alt="WordPress" class="brands__logo" width="194" height="44">
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
 </body>
 
 </html>
+
+
+
